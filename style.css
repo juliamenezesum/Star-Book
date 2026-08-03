@@ -1,22 +1,115 @@
-body{ font-family: Arial, sans-serif;
-    background: color #ffffff; ;
-    color: #ffffff;
-    margin: 0 padding 20px; } 
-    .container{ max-width: 600px;
-        margin: auto;
-        background: rgb(127, 93, 207); 
-        padding: 20px; 
-        border-radius: 8px;
-    };
-    
-    textarea{ width: 100% height 100px;
-        margin-bottom: 10px; padding: 10x; } 
-        button{ background: #965de0;
-            color: rgb(255, 255, 255); 
-            border: none;
-            padding: 10x 20x cursor pointer; 
-            border-radius: 4px; } 
-        .mural{ margin-top: 30px; } 
-        .desabafo{ background: #ac84e0; 
-            padding: 15px; 
-            margin-bottom:10px; border-left: 4px solid #ac84e0; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #E6E6FA 0%, #D8BFD8 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(216, 191, 216, 0.3);
+}
+
+h1 {
+    color: #8A2BE2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aviso {
+    background: #FFF0F5;
+    border-left: 4px solid #FF69B4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #C71585;
+    font-size: 14px;
+    text-align: center;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 2px solid #D8BFD8;
+    border-radius: 12px;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.formulario textarea:focus {
+    outline: none;
+    border-color: #8A2BE2;
+}
+
+#btnSalvar {
+    width: 100%;
+    padding: 15px;
+    background: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnSalvar:hover {
+    background: #7B68EE;
+}
+
+.desabafo {
+    background: #F8F8FF;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 4px solid #8A2BE2;
+}
+
+.data {
+    font-size: 12px;
+    color: #9370DB;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-editar {
+    background: #DDA0DD;
+    color: white;
+}
+
+.btn-deletar {
+    background: #FFB6C1;
+    color: white;
+}
+
+.marcador-editado {
+    font-size: 11px;
+    color: #8A2BE2;
+    font-style: italic;
+}
